@@ -203,7 +203,6 @@ For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 Options include:
 - Local network deployment
-- Docker deployment (using provided Dockerfile.backend, Dockerfile.frontend, and docker-compose.yml)
 - Cloud deployment (Heroku, Railway, Vercel, Netlify)
 - VPS deployment
 
