@@ -27,25 +27,8 @@ The simplest deployment for a P2P application is to run it on a computer within 
 4. Access the application at `http://localhost:3000`
 5. Share your local IP address with others on the same network to access the application
 
-### Option 2: Docker Deployment
 
-Docker makes it easy to package and deploy both components. We've already created the necessary files for you:
-
-- `Dockerfile.backend` - Docker configuration for the Java backend
-- `Dockerfile.frontend` - Docker configuration for the Next.js frontend
-- `docker-compose.yml` - Docker Compose configuration to run both services
-
-To deploy with Docker:
-
-1. Make sure Docker and Docker Compose are installed on your system
-2. Run with Docker Compose:
-   ```bash
-   docker-compose up -d
-   ```
-
-This will build and start both the backend and frontend services. The frontend will be available at http://localhost:3000 and the backend at http://localhost:8080.
-
-### Option 3: Cloud Deployment
+### Option 2: Cloud Deployment
 
 #### Backend Deployment
 
@@ -82,25 +65,6 @@ We've already created a `Procfile` for Heroku deployment. To deploy:
    ```
 
 2. Deploy the `ui/out` directory to Netlify
-
-### Option 4: Virtual Private Server (VPS)
-
-For complete control, deploy to a VPS like DigitalOcean, Linode, or AWS EC2. We've created helper files to make this process easier:
-
-- `vps-setup.sh` - A script that automates the setup process on Ubuntu/Debian VPS
-- `nginx.conf.example` - A sample Nginx configuration with HTTPS and security headers
-
-#### Automated Setup
-
-1. SSH into your server
-2. Upload the project files to your server
-3. Make the setup script executable and run it:
-   ```bash
-   chmod +x vps-setup.sh
-   ./vps-setup.sh
-   ```
-   
-4. Follow the prompts and instructions during the setup process
 
 #### Manual Setup
 
